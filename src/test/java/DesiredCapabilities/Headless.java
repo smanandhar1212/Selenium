@@ -13,7 +13,6 @@ public class Headless {
 		options.addArguments("--headless");
 		DesiredCapabilities capabitilites = new DesiredCapabilities();
 		capabitilites.setCapability(ChromeOptions.CAPABILITY, options);
-		options.merge(capabitilites);
 
 		WebDriver driver = new ChromeDriver(options);
 		driver.get("https://www.google.com");

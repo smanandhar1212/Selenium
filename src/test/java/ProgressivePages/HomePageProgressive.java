@@ -11,7 +11,8 @@ public class HomePageProgressive {
 	// Class level variable
 	WebDriver driver = null;
 
-	@FindBy(how = How.XPATH, using = "//input[@name='https://www.progressive.com/Content/images/DomainProgressive/wh3/base/icons/products/blue/AU.svg']")
+	@FindBy(how = How.XPATH, using = "//img[@src='https://www.progressive.com/Content/images/DomainProgressive/wh3/base/icons/products/blue/AU.svg']")
+	
 	
 	public WebElement autoLink;
 
@@ -23,6 +24,7 @@ public class HomePageProgressive {
 	
 	public void GetQuoteByAutoTest() {
 		autoLink.click();
+		
 		
 	}
 }

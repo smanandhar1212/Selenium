@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import ProgressivePages.AddressPageProgressive;
 import ProgressivePages.HomePageProgressive;
+import ProgressivePages.PersonalInformation;
 
 public class GetQuoteByAutoTest {
 	WebDriver driver;
@@ -30,7 +31,6 @@ public class GetQuoteByAutoTest {
 		driver.get("https://www.progressive.com/");
 		driver.navigate().refresh();
 		driver.manage().window().maximize();
-
 	}
 
 	@Test(priority = 0)
@@ -38,9 +38,14 @@ public class GetQuoteByAutoTest {
 		invokeBrowser();
 		HomePageProgressive home = new HomePageProgressive(driver);
 		home.GetQuoteByAutoTest();
-		
+	
 		AddressPageProgressive address = new AddressPageProgressive(driver);
 		address.GetQuoteByAutoTest();
+	
+		PersonalInformation information =new PersonalInformation(driver);
+		information.GetQuoteByAutoTest();
+		
+		
 		
 
 	}
