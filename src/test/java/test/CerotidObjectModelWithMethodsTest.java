@@ -27,7 +27,7 @@ public class CerotidObjectModelWithMethodsTest {
 		CerotidObjectModelWithMethods obj = new CerotidObjectModelWithMethods(driver);
 		obj.selectCourse("QA Automation");
 		obj.selectSession("Upcoming Session");
-		obj.eterName("Dev Acharya");
+		obj.eterName("Selina Manandhar");
 	}
 
 }

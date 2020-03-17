@@ -87,15 +87,23 @@ public class GetQuoteByAutoTest {
 		Thread.sleep(2000);
 	}
 	
+	
 	@Test(priority = 3)
 	public void selectVehicleProgressive() throws InterruptedException {
 		Thread.sleep(3000);
 		selectVehicleProgressiveOBJ = new SelectVehicleProgressive(driver);
 		
-		selectVehicleProgressiveOBJ.selectVehicleYear("2019");
-		selectVehicleProgressiveOBJ.selectBodyType("2DR 4CYL");
-		selectVehicleProgressiveOBJ.primaryUseofVehicle("Personal (to/from work or school, errands, pleasure)");
-		// addVehicleOBJ.enterZip("75062");
+		selectVehicleProgressiveOBJ.selectVin("");
+		selectVehicleProgressiveOBJ.enterVin("5YFBURHEXEP010694");
+		selectVehicleProgressiveOBJ.clickContinueButton();
+		
+//		selectVehicleProgressiveOBJ.selectVehicleYear("2018");
+//		selectVehicleProgressiveOBJ.selectVehicleMake("Audi");
+//		selectVehicleProgressiveOBJ.selectType("A4");
+//		selectVehicleProgressiveOBJ.selectBodyType("2DR 4CYL");
+		
+		selectVehicleProgressiveOBJ.primaryUse("Personal (to/from work or school, errands, pleasure)");
+		selectVehicleProgressiveOBJ.enterZip("75061");
 		selectVehicleProgressiveOBJ.ownOrLeaseCar("Own");
 		selectVehicleProgressiveOBJ.yearOfOwnership("string:B");
 		selectVehicleProgressiveOBJ.clickAEBYes();
