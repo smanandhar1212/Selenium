@@ -1,77 +1,88 @@
 package ProgressivePages;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class PersonalInformation {
 
-	WebDriver driver = null;
-
-	By firstName = By.xpath("//input[@name='NameAndAddressEdit_embedded_questions_list_FirstName']");
-	By middleName = By.xpath("//input[@name='NameAndAddressEdit_embedded_questions_list_MiddleInitial']");
-	By lastName = By.xpath("//input[@name='NameAndAddressEdit_embedded_questions_list_LastName']");
-	By dob = By.xpath("//input[@name='NameAndAddressEdit_embedded_questions_list_DateOfBirth']");
-	By streetName = By.xpath("//input[@name='NameAndAddressEdit_embedded_questions_list_MailingAddress']");
-	By apt = By.xpath("//input[@name='NameAndAddressEdit_embedded_questions_list_ApartmentUnit']");
-	By city = By.xpath("//input[@name='NameAndAddressEdit_embedded_questions_list_City']");
-	By zipCode = By.xpath("//input[@name='NameAndAddressEdit_embedded_questions_list_ZipCode']");
-
-	By startPersonalInformation = By.xpath("//button[contains(.,'Okay, start my quote.')]");
+	WebDriver driver;
 
 	public PersonalInformation(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-
 	}
 
-	public void enterFirstName(String fName) {
-		driver.findElement(firstName).sendKeys(fName);
+	@FindBy(how = How.ID, using = "NameAndAddressEdit_embedded_questions_list_FirstName")
+	public WebElement enterFirstName;
+
+	@FindBy(how = How.ID, using = "NameAndAddressEdit_embedded_questions_list_MiddleInitial")
+	public WebElement enterMiddleName;
+
+	@FindBy(how = How.ID, using = "NameAndAddressEdit_embedded_questions_list_LastName")
+	public WebElement enterlastName;
+
+	@FindBy(how = How.ID, using = "NameAndAddressEdit_embedded_questions_list_Suffix")
+	public WebElement selectSuffix;
+
+	@FindBy(how = How.ID, using = "NameAndAddressEdit_embedded_questions_list_DateOfBirth")
+	public WebElement enterDOB;
+
+//	@FindBy(how = How.XPATH, using = "//input[@name='NameAndAddressEdit_embedded_questions_list_MailingAddress']")
+//	public WebElement enterStreetNoandName;
+//	
+	@FindBy(how = How.ID, using = "NameAndAddressEdit_embedded_questions_list_MailingAddress")
+	public WebElement enterAddress;
+
+	// By streetName =
+	// By.xpath("//input[@name='NameAndAddressEdit_embedded_questions_list_MailingAddress']");
+
+	@FindBy(how = How.ID, using = "NameAndAddressEdit_embedded_questions_list_ApartmentUnit")
+	public WebElement enterAptNo;
+
+	@FindBy(how = How.ID, using = "NameAndAddressEdit_embedded_questions_list_MailingZipType")
+	public WebElement selectPOBoxMilitiry;
+
+	@FindBy(how = How.XPATH, using = "//button[contains(.,'Okay, start my quote.')]")
+	public WebElement clickStartMyQuote;
+
+	public void enterFirstName(String firstName) {
+		enterFirstName.sendKeys(firstName);
 	}
 
-	public void enterMiddleName(String middleInitial) {
-		driver.findElement(middleName).sendKeys(middleInitial);
+	public void enterMiddleName(String milddleInitial) {
+		enterMiddleName.sendKeys(milddleInitial);
 	}
 
-	public void enterLastName(String lName) {
-		driver.findElement(lastName).sendKeys(lName);
+	public void enterLastName(String lastName) {
+		enterlastName.sendKeys(lastName);
 	}
 
-	public void enterDOB(String date) {
-		driver.findElement(dob).sendKeys(date);
+	public void selectSuffix(String suffix) {
+		Select select = new Select(selectSuffix);
+		select.selectByVisibleText(suffix);
 	}
 
-	public void enterStreetName(String street) {
-		driver.findElement(streetName).sendKeys(street);
-
+	public void enterDOB(String dateOfBirth) {
+		enterDOB.sendKeys(dateOfBirth);
 	}
 
-	public void enterAptNo(String aptNo) {
-		driver.findElement(apt).sendKeys(aptNo);
-
+	public void enterStreetAddress(String streetAddress) {
+		enterAddress.sendKeys(streetAddress);
 	}
 
-	public void enterCity(String cityName) {
-		driver.findElement(city).clear();
-		driver.findElement(city).sendKeys(cityName);
+	public void enterApartmentNo(String aptNo) {
+		enterAptNo.sendKeys(aptNo);
 	}
 
-	public void enterZipcode(String code) throws InterruptedException {
-		driver.findElement(zipCode).clear();
-		driver.findElement(zipCode).sendKeys(code);
-		Thread.sleep(2000);
-
+	public void selectPOBoxMilitiry() {
+		selectPOBoxMilitiry.click();
 	}
 
-	public void GetQuoteByAutoTest() {
-		driver.findElement(startPersonalInformation).click();
-
+	public void clickStartMyQuote() {
+		clickStartMyQuote.click();
 	}
-
 }

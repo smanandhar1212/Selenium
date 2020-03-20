@@ -10,24 +10,21 @@ import org.openqa.selenium.support.PageFactory;
 public class GoogleObject {
 
 	// class level Variable
-		WebDriver driver;
-		 
-		public GoogleObject(WebDriver drive) {
-			this.driver = driver;
-			PageFactory.initElements(drive,this);
-		}
-			
-		@FindBy(how = How.XPATH, using = "//input[@name='q']")
-		public WebElement googleSearchBox;
-		
-		@FindBy(how = How.XPATH, using = "//input[@name='btnk']")
-		public WebElement searchBtn;
-		
-		
-		
-		public void GoogleSearch(String search) {
-			googleSearchBox.sendKeys(search);
-			searchBtn.sendKeys(Keys.RETURN);
-		}
+	WebDriver driver;
+
+	public GoogleObject(WebDriver drive) {
+		this.driver = driver;
+		PageFactory.initElements(drive, this);
 	}
 
+	@FindBy(how = How.XPATH, using = "//input[@name='q']")
+	public WebElement googleSearchBox;
+
+	@FindBy(how = How.XPATH, using = "//input[@name='btnk']")
+	public WebElement searchBtn;
+
+	public void GoogleSearch(String search) {
+		googleSearchBox.sendKeys(search);
+		searchBtn.sendKeys(Keys.RETURN);
+	}
+}

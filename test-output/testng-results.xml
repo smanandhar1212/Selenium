@@ -1,401 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="0" failed="0" skipped="8">
+<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-15T11:16:30 CDT" name="Default suite" finished-at="2020-03-15T23:18:29 CDT" duration-ms="43318380">
+  <suite started-at="2020-03-20T18:02:12 CDT" name="Default suite" finished-at="2020-03-20T18:04:14 CDT" duration-ms="121702">
     <groups>
     </groups>
-    <test started-at="2020-03-15T11:16:30 CDT" name="Default test" finished-at="2020-03-15T23:18:29 CDT" duration-ms="43318380">
+    <test started-at="2020-03-20T18:02:12 CDT" name="Default test" finished-at="2020-03-20T18:04:14 CDT" duration-ms="121702">
       <class name="ProgressiveTest.GetQuoteByAutoTest">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-15T11:16:30 CDT" name="setUpTest" finished-at="2020-03-15T14:17:33 CDT" duration-ms="10862469" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-at ProgressiveTest.GetQuoteByAutoTest.setUpTest(GetQuoteByAutoTest.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-20T18:02:12 CDT" name="setUpTest" finished-at="2020-03-20T18:02:16 CDT" duration-ms="3499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="homePage()[pri:0, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-15T23:18:29 CDT" name="homePage" finished-at="2020-03-15T23:18:29 CDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-at ProgressiveTest.GetQuoteByAutoTest.setUpTest(GetQuoteByAutoTest.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="homePage()[pri:0, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-20T18:02:16 CDT" name="homePage" finished-at="2020-03-20T18:02:21 CDT" duration-ms="4696" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method signature="addressPageProgressive()[pri:1, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-15T23:18:29 CDT" name="addressPageProgressive" finished-at="2020-03-15T23:18:29 CDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-at ProgressiveTest.GetQuoteByAutoTest.setUpTest(GetQuoteByAutoTest.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="addressPageProgressive()[pri:1, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-20T18:02:21 CDT" name="addressPageProgressive" finished-at="2020-03-20T18:02:21 CDT" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addressPageProgressive -->
-        <test-method signature="PersonalInformation()[pri:2, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-15T23:18:29 CDT" name="PersonalInformation" finished-at="2020-03-15T23:18:29 CDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-at ProgressiveTest.GetQuoteByAutoTest.setUpTest(GetQuoteByAutoTest.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="PersonalInformation()[pri:2, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-20T18:02:21 CDT" name="PersonalInformation" finished-at="2020-03-20T18:02:28 CDT" duration-ms="7397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PersonalInformation -->
-        <test-method signature="selectVehicleProgressive()[pri:3, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-15T23:18:29 CDT" name="selectVehicleProgressive" finished-at="2020-03-15T23:18:29 CDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-at ProgressiveTest.GetQuoteByAutoTest.setUpTest(GetQuoteByAutoTest.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="selectVehicleProgressive()[pri:3, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-20T18:02:28 CDT" name="selectVehicleProgressive" finished-at="2020-03-20T18:02:51 CDT" duration-ms="22675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectVehicleProgressive -->
-        <test-method signature="DriverInformation()[pri:4, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-15T23:18:29 CDT" name="DriverInformation" finished-at="2020-03-15T23:18:29 CDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-at ProgressiveTest.GetQuoteByAutoTest.setUpTest(GetQuoteByAutoTest.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="DriverInformation()[pri:4, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-20T18:02:51 CDT" name="DriverInformation" finished-at="2020-03-20T18:03:23 CDT" duration-ms="32350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DriverInformation -->
-        <test-method signature="ConitnueFromAddDriversPage()[pri:5, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-15T23:18:29 CDT" name="ConitnueFromAddDriversPage" finished-at="2020-03-15T23:18:29 CDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="ConitnueFromAddDriversPage()[pri:5, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-20T18:03:23 CDT" name="ConitnueFromAddDriversPage" finished-at="2020-03-20T18:03:33 CDT" duration-ms="10043" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@text='Continue']"}
+  (Session info: chrome=80.0.3987.149)
+  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
+System info: host: 'celinas-MacBook-Pro.local', ip: '192.168.1.29', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:59137}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=/var/folders/fx/jqjt3_v11jn51s8l0g4jv1f80000gn/T/.com.google.Chrome.WHMwLB}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=80.0.3987.149, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3020c27c4ae6d04b1b28a3a1cb2ca600
+*** Element info: {Using=xpath, value=//input[@text='Continue']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@text='Continue']"}
+  (Session info: chrome=80.0.3987.149)
+  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
+System info: host: 'celinas-MacBook-Pro.local', ip: '192.168.1.29', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:59137}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=/var/folders/fx/jqjt3_v11jn51s8l0g4jv1f80000gn/T/.com.google.Chrome.WHMwLB}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=80.0.3987.149, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3020c27c4ae6d04b1b28a3a1cb2ca600
+*** Element info: {Using=xpath, value=//input[@text='Continue']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -404,24 +66,27 @@ at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-at ProgressiveTest.GetQuoteByAutoTest.setUpTest(GetQuoteByAutoTest.java:35)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at ProgressivePages.AddDriversPage.clickConitnue(AddDriversPage.java:16)
+at ProgressiveTest.GetQuoteByAutoTest.ConitnueFromAddDriversPage(GetQuoteByAutoTest.java:148)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
@@ -437,89 +102,41 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConitnueFromAddDriversPage -->
-        <test-method signature="fillPreviousInsuranceDetails()[pri:6, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-15T23:18:29 CDT" name="fillPreviousInsuranceDetails" finished-at="2020-03-15T23:18:29 CDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-at ProgressiveTest.GetQuoteByAutoTest.setUpTest(GetQuoteByAutoTest.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="fillPreviousInsuranceDetails()[pri:6, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-20T18:03:34 CDT" name="fillPreviousInsuranceDetails" finished-at="2020-03-20T18:03:59 CDT" duration-ms="25829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillPreviousInsuranceDetails -->
-        <test-method signature="selectSnapShot()[pri:7, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-15T23:18:29 CDT" name="selectSnapShot" finished-at="2020-03-15T23:18:29 CDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="selectSnapShot()[pri:7, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-20T18:03:59 CDT" name="selectSnapShot" finished-at="2020-03-20T18:04:14 CDT" duration-ms="14693" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
+              <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"SnapshotFormModel_SnapshotPolicyEnrollment_Value_N"}
+  (Session info: chrome=80.0.3987.149)
+  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.69 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
+System info: host: 'celinas-MacBook-Pro.local', ip: '192.168.1.29', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:59137}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=/var/folders/fx/jqjt3_v11jn51s8l0g4jv1f80000gn/T/.com.google.Chrome.WHMwLB}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=80.0.3987.149, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3020c27c4ae6d04b1b28a3a1cb2ca600
+*** Element info: {Using=id, value=SnapshotFormModel_SnapshotPolicyEnrollment_Value_N}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unable to discover open pages
-  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10861.61 seconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"SnapshotFormModel_SnapshotPolicyEnrollment_Value_N"}
+  (Session info: chrome=80.0.3987.149)
+  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.69 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'celinas-MacBook-Pro.local', ip: 'fe80:0:0:0:82c:3d96:4185:61ba%12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '12.0.2'
+System info: host: 'celinas-MacBook-Pro.local', ip: '192.168.1.29', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:59137}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=/var/folders/fx/jqjt3_v11jn51s8l0g4jv1f80000gn/T/.com.google.Chrome.WHMwLB}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=80.0.3987.149, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3020c27c4ae6d04b1b28a3a1cb2ca600
+*** Element info: {Using=id, value=SnapshotFormModel_SnapshotPolicyEnrollment_Value_N}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -528,24 +145,27 @@ at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-at ProgressiveTest.GetQuoteByAutoTest.setUpTest(GetQuoteByAutoTest.java:35)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+at org.openqa.selenium.By$ById.findElement(By.java:214)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at ProgressivePages.SnapShot.clickNOonSnapShot(SnapShot.java:21)
+at ProgressiveTest.GetQuoteByAutoTest.selectSnapShot(GetQuoteByAutoTest.java:183)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
@@ -561,11 +181,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSnapShot -->
-        <test-method is-config="true" signature="tearDown1()[pri:0, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-15T23:18:29 CDT" name="tearDown1" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1584332309300" status="SKIP">
+        <test-method is-config="true" signature="tearDown1()[pri:0, instance:ProgressiveTest.GetQuoteByAutoTest@72057ecf]" started-at="2020-03-20T18:04:14 CDT" name="tearDown1" finished-at="2020-03-20T18:04:14 CDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown1 -->

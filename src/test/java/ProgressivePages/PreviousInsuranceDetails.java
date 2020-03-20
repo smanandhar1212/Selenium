@@ -1,61 +1,118 @@
 package ProgressivePages;
 
-import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class PreviousInsuranceDetails {
+
 	WebDriver driver;
-	
+
 	public PreviousInsuranceDetails(WebDriver driver) {
 		this.driver = driver;
-	}
-	By doYouHaveInsurance = By.id("FinalDetailsFormModel_InsuranceToday_Value_N");
-	By doYouHaveInsuranceLast_31days = By.id("FinalDetailsFormModel_InsuranceLastMonth_Value_N");
-	By nonAutoPolicyNo = By.id("FinalDetailsFormModel_OtherPolicies_Value_N");
-	By email = By.id("FinalDetailsFormModel_PrimaryEmailAddress_Value");
-	By residentInHome = By.id("FinalDetailsFormModel_TotalResidents_Value");
-	By noOfInjuryClaim = By.id("FinalDetailsFormModel_TotalPipClaimsCount_Value");
-	By continueButton = By.xpath("//input[@text='Continue']");
-
-	public void click_No_on_having_insurance() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Thread.sleep(4000);
-		driver.findElement(doYouHaveInsurance).click();
+		PageFactory.initElements(driver, this);
 	}
 
-	public void click_No_on_having_insurance_last_31_days() throws InterruptedException {
-		Thread.sleep(2000);
-		driver.findElement(doYouHaveInsuranceLast_31days).click();
+	@FindBy(how = How.XPATH, using = "//input[@id='FinalDetailsEdit_embedded_questions_list_InsuranceToday_Y']")
+	public WebElement gotAutoInsurance;
+
+	@FindBy(how = How.XPATH, using = "//select[@id='FinalDetailsEdit_embedded_questions_list_RecentAutoInsuranceCompanyPeriod']")
+	public WebElement periodWithCurrentCompany;
+
+	@FindBy(how = How.XPATH, using = "//select[@id='FinalDetailsEdit_embedded_questions_list_BodilyInjuryLimits']")
+	public WebElement currentInsuranceLimit;
+
+	@FindBy(how = How.XPATH, using = "//input[@id='FinalDetailsEdit_embedded_questions_list_OtherPolicies_N']")
+	public WebElement nonAutoPolicyWithProgressive;
+
+	@FindBy(how = How.XPATH, using = "//input[@id='FinalDetailsEdit_embedded_questions_list_PriorProgressive_N']")
+	public WebElement previousAutoPolicyWithProgressive;
+
+	@FindBy(how = How.XPATH, using = "//input[@id='FinalDetailsEdit_embedded_questions_list_AdvancedShopperPolicyEffectiveDate']")
+	public WebElement policyStartingDate;
+
+	@FindBy(how = How.XPATH, using = "//input[@id='FinalDetailsEdit_embedded_questions_list_PrimaryEmailAddress']")
+	public WebElement emailAddress;
+
+	@FindBy(how = How.XPATH, using = "//select[@id='FinalDetailsEdit_embedded_questions_list_TotalResidents']")
+	public WebElement noOffamilyMember;
+
+	@FindBy(how = How.XPATH, using = "//select[@id='FinalDetailsEdit_embedded_questions_list_TotalPipClaimsCount']")
+	public WebElement noOfInjuryClaims;
+
+	@FindBy(how = How.XPATH, using = "//loading-button[contains(.,'Continue')]")
+	public WebElement clickContinue;
+
+	@FindBy(how = How.XPATH, using = "//input[@id='SnapshotEnrollment40Edit_embedded_questions_list_SnapshotPolicyEnrollment_Y']")
+	public WebElement enrollSnapShot;
+
+	@FindBy(how = How.XPATH, using = "//input[@id='SnapshotEnrollment40Edit_embedded_questions_list_SnapshotEnrollmentExperience_D']")
+	public WebElement snapShotEnrollement;
+
+	@FindBy(how = How.XPATH, using = "//loading-button[contains(.,'No thanks, just auto')]")
+	public WebElement clickNoThanks;
+
+	public void haveAutoInsuranceToday() {
+		gotAutoInsurance.click();
 	}
 
-	public void clickNonAutoPolicyCo() throws InterruptedException {
-		Thread.sleep(2000);
-		driver.findElement(nonAutoPolicyNo).click();
+	public void autoInsurancePolicyPeriod(String currentCompanyTime) {
+		Select autoInsuredTime = new Select(periodWithCurrentCompany);
+		autoInsuredTime.selectByVisibleText(currentCompanyTime);
 	}
 
-	public void enterEmail(String value) throws InterruptedException {
-		Thread.sleep(1000);
-		driver.findElement(email).sendKeys(value);
+	public void currentInsuredLimit(String currentLimit) {
+		Select autoInsuredLimit = new Select(currentInsuranceLimit);
+		autoInsuredLimit.selectByVisibleText(currentLimit);
 	}
 
-	public void selectResidentNumber(String value) throws InterruptedException {
-		Thread.sleep(1000);
-		driver.findElement(residentInHome);
-		Select select = new Select(driver.findElement(residentInHome));
-		select.selectByValue(value);
+	public void haveNonAutoPolicy() {
+		nonAutoPolicyWithProgressive.click();
 	}
 
-	public void selectInjuryClaimNumbers(String value) throws InterruptedException {
-		Thread.sleep(1000);
-		driver.findElement(residentInHome);
-		Select select = new Select(driver.findElement(noOfInjuryClaim));
-		select.selectByValue(value);
+	public void hasPastAutoPolicyWithUs() {
+		previousAutoPolicyWithProgressive.click();
 	}
 
-	public void clickContinue() throws InterruptedException {
-		driver.findElement(continueButton).click();
+	public void AutoPolicyStartingDate(String startDate) {
+		policyStartingDate.sendKeys(startDate);
+	}
+
+	public void policyHolderEmailId(String email) {
+		emailAddress.sendKeys(email);
+	}
+
+	public void policyHolderFamilyNumber(String familySize) {
+		Select holderFamilySize = new Select(noOffamilyMember);
+		holderFamilySize.selectByVisibleText(familySize);
+	}
+
+	public void previousNoOfInjuryClaims(String claimsNo) {
+		Select previousClaims = new Select(noOfInjuryClaims);
+		previousClaims.selectByVisibleText(claimsNo);
+	}
+
+	public void clickContinueToSnapShotwPage() {
+		clickContinue.click();
+	}
+
+	public void snapShotEnrolled() {
+		enrollSnapShot.click();
+	}
+
+	public void snapShotEnrollementOption() {
+		snapShotEnrollement.click();
+	}
+
+	public void clickContinueToBundleInsurancePage() {
+		clickContinue.click();
+	}
+
+	public void clickToFinalRatePage() {
+		clickNoThanks.click();
 	}
 
 }

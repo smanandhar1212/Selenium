@@ -5,15 +5,9 @@
     <classes>
       <class name="ProgressiveTest.GetQuoteByAutoTest">
         <methods>
-          <include name="fillPreviousInsuranceDetails"/>
           <include name="selectSnapShot"/>
           <include name="ConitnueFromAddDriversPage"/>
-          <include name="PersonalInformation"/>
           <include name="setUpTest"/>
-          <include name="DriverInformation"/>
-          <include name="homePage"/>
-          <include name="addressPageProgressive"/>
-          <include name="selectVehicleProgressive"/>
           <include name="tearDown1"/>
         </methods>
       </class> <!-- ProgressiveTest.GetQuoteByAutoTest -->
